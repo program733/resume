@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hospital Management System</h1>
+    </header>
+    <main>
+        <section id="doctor-staff">
+            <h2>Doctor Staff</h2>
+            
+            <form id="add-doctor-form">
+                <input type="text" id="doctor-name" placeholder="Doctor Name" required>
+                <input type="text" id="specialization" placeholder="Specialization" required>
+                <button type="submit">Add Doctor</button>
+            </form>
+            <table id="doctor-list">
+                <thead>
+                    <tr>
+                        <th>Doctor Name</th>
+                        <th>Specialization</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            
+        </section>
+        <section id="medicine">
+            <h2>Medicine</h2>
+            
+            <form id="add-medicine-form">
+                <input type="text" id="medicine-name" placeholder="Medicine Name" required>
+                <input type="number" id="quantity" placeholder="Quantity" required>
+                <button type="submit">Add Medicine</button>
+            </form>
+            <table id="medicine-list">
+                <thead>
+                    <tr>
+                        <th>Medicine Name</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            
+        </section>
+        <section id="patients">
+            <h2>Patients</h2>
+            
+            <form id="add-patient-form">
+                <input type="text" id="patient-name" placeholder="Patient Name" required>
+                <input type="text" id="assigned-doctor" placeholder="Assigned Doctor" required>
+                <button type="submit">Add Patient</button>
+            </form>
+            <table id="patient-list">
+                <thead>
+                    <tr>
+                        <th>Patient Name</th>
+                        <th>Assigned Doctor</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Hospital Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
